@@ -13,6 +13,7 @@ module.exports = {
       ]
     }],
     'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null
+    'no-descending-specificity': null,
+    'rule-empty-line-before': 'never'
   }
 };
