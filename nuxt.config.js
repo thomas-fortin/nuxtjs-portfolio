@@ -58,7 +58,21 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // Doc: https://github.com/rigor789/vue-scrollto
+    ['vue-scrollto/nuxt', {
+      container: 'body',
+      duration: 750,
+      easing: 'ease-out',
+      offset: 0,
+      force: true,
+      cancelable: true,
+      onStart: false,
+      onDone: false,
+      onCancel: false,
+      x: false,
+      y: true
+    }]
   ],
   /*
   ** Axios module configuration
