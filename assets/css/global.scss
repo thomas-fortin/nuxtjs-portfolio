@@ -19,3 +19,20 @@ body {
 .bg-main-gradient {
   background: linear-gradient(128deg, theme('colors.primary') 0%, theme('colors.secondary') 100%);
 }
+.btn {
+  transition: all 0.2s;
+
+  @apply py-3 px-16 inline-block cursor-pointer text-center font-semibold select-none align-middle rounded-full;
+  &:hover {
+    @apply shadow-xl;
+  }
+  &[disabled] {
+    cursor: not-allowed;
+  }
+  &.btn-primary {
+    @apply text-white border-solid border-2 border-white;
+    &:not([disabled]):hover {
+      @apply bg-white text-primary;
+    }
+  }
+}

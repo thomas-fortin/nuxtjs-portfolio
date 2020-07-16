@@ -1,7 +1,11 @@
 <template>
-  <div id="homeExperiences">
-    <h1>TEST!!</h1>
-  </div>
+  <section id="homeExperiences">
+    <div class="container mx-auto">
+      <h3 class="text-3xl md:text-4xl lg:text-5xl font-thin mb-5 text-center">
+        {{ $t('homeExperiences.title') }}
+      </h3>
+    </div>
+  </section>
 </template>
 
 <script>

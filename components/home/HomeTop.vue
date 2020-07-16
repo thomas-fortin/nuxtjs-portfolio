@@ -21,6 +21,7 @@
 <script>
 import ScrollDownButton from '@/components/shared/ScrollDownButton';
 import BottomSingleWaveSvg from '@/components/shared/BottomSingleWaveSvg';
+
 export default {
   name: 'HomeTop',
   components: {

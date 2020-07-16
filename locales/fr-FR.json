@@ -1,3 +1,7 @@
 {
-  "jobPost": "Développeur web full-stack"
+  "home": "Accueil",
+  "jobPost": "Développeur web full-stack",
+  "homeExperiences": {
+    "title": "Mes expériences"
+  }
 }
