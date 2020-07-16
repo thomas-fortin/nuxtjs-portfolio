@@ -8,7 +8,7 @@
             Thomas Fortin
           </h1>
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-thin">
-            Développeur Web Full-Stack
+            {{ $t('jobPost') }}
           </h2>
         </div>
         <ScrollDownButton link="homeExperiences" />

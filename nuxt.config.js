@@ -59,6 +59,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // Doc: https://nuxt-community.github.io/nuxt-i18n/
+    'nuxt-i18n',
     // Doc: https://github.com/rigor789/vue-scrollto
     ['vue-scrollto/nuxt', {
       container: 'body',
@@ -74,6 +76,32 @@ export default {
       y: true
     }]
   ],
+  i18n: {
+    locales: [
+      {
+        name: 'Français',
+        code: 'fr',
+        iso: 'fr-FR',
+        file: 'fr-FR.json'
+      },
+      {
+        name: 'English',
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.json'
+      }
+    ],
+    langDir: 'locales/',
+    defaultLocale: 'fr',
+    strategy: 'prefix_and_default',
+    vueI18n: {
+      fallbackLocale: 'fr',
+      messages: {
+        fr: require('./locales/fr-FR.json'),
+        en: require('./locales/en-US.json')
+      }
+    }
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
