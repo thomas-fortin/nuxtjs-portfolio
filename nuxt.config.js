@@ -62,19 +62,45 @@ export default {
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
     'nuxt-i18n',
     // Doc: https://github.com/rigor789/vue-scrollto
-    ['vue-scrollto/nuxt', {
-      container: 'body',
-      duration: 750,
-      easing: 'ease-out',
-      offset: 0,
-      force: true,
-      cancelable: true,
-      onStart: false,
-      onDone: false,
-      onCancel: false,
-      x: false,
-      y: true
-    }]
+    [
+      'vue-scrollto/nuxt', {
+        container: 'body',
+        duration: 750,
+        easing: 'ease-out',
+        offset: 0,
+        force: true,
+        cancelable: true,
+        onStart: false,
+        onDone: false,
+        onCancel: false,
+        x: false,
+        y: true
+      }
+    ],
+    // Doc: https://firebase.nuxtjs.org/guide/getting-started/
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: process.env.API_KEY,
+          authDomain: process.env.AUTH_DOMAIN,
+          databaseURL: process.env.DATABASE_URL,
+          projectId: process.env.PROJECT_ID,
+          storageBucket: process.env.STORAGE_BUCKET,
+          messagingSenderId: process.env.MESSAGING_SENDER_ID,
+          appId: '1:505213614131:web:30c0371934418755fbcb46',
+          measurementId: process.env.MEASUREMENT_ID
+        },
+        services: {
+          firestore: true,
+          storage: true,
+          realtimeDb: true,
+          messaging: true,
+          performance: true,
+          analytics: true
+        }
+      }
+    ]
   ],
   i18n: {
     locales: [
