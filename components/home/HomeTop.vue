@@ -14,19 +14,25 @@
         <ScrollDownButton link="homeExperiences" />
       </div>
     </div>
-    <BottomSingleWaveSvg />
+    <BottomSingleWaveSvg :color="bgColor" />
   </section>
 </template>
 
 <script>
 import ScrollDownButton from '@/components/shared/ScrollDownButton';
 import BottomSingleWaveSvg from '@/components/shared/BottomSingleWaveSvg';
+import { theme } from '@/tailwind.config';
 
 export default {
   name: 'HomeTop',
   components: {
     BottomSingleWaveSvg,
     ScrollDownButton
+  },
+  data() {
+    return {
+      bgColor: theme.colors.gray['100']
+    };
   }
 };
 </script>
