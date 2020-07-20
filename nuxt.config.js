@@ -82,18 +82,17 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: process.env.API_KEY,
-          authDomain: process.env.AUTH_DOMAIN,
-          databaseURL: process.env.DATABASE_URL,
-          projectId: process.env.PROJECT_ID,
-          storageBucket: process.env.STORAGE_BUCKET,
-          messagingSenderId: process.env.MESSAGING_SENDER_ID,
+          apiKey: 'AIzaSyBYyNzxsEt8mqo0yulPzk5lm6T6XuYe2L0',
+          authDomain: 'my-portfolio-a3cd1.firebaseapp.com',
+          databaseURL: 'https://my-portfolio-a3cd1.firebaseio.com',
+          projectId: 'my-portfolio-a3cd1',
+          storageBucket: 'my-portfolio-a3cd1.appspot.com',
+          messagingSenderId: '505213614131',
           appId: '1:505213614131:web:30c0371934418755fbcb46',
-          measurementId: process.env.MEASUREMENT_ID
+          measurementId: 'G-RBLLLW1GMH'
         },
         services: {
           firestore: true,
-          storage: true,
           realtimeDb: true,
           messaging: true,
           performance: true,
