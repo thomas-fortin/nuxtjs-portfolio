@@ -31,6 +31,7 @@ export const actions = {
         skills: doc.data().skills,
         slug: doc.data().slug
       }));
+
     commit('SET_EXPERIENCES', _.cloneDeep(allExperiences));
   }
 };

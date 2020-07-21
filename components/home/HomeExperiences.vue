@@ -10,14 +10,8 @@
         </p>
         <div class="mt-16 flex flex-wrap justify-center lg:justify-between experiences">
           <template v-if="experiences">
-            <span
-              v-for="exp in experiences"
-              :key="exp.id"
-            >
-              EXP HERE : {{ exp.id }}
-            </span>
+            <ExperienceCard v-for="experience in experiences" :key="experience.id" :experience="experience" />
           </template>
-          <span>WAOW: {{ experiences }}</span>
         </div>
       </div>
     </div>
