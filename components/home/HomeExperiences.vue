@@ -8,7 +8,7 @@
         <p class="text-center">
           Voici une liste non-exhaustive de mes dernières expériences professionnelles :
         </p>
-        <div class="mt-16 flex flex-wrap justify-center lg:justify-between experiences">
+        <div class="mt-16 flex flex-wrap justify-center experiences">
           <template v-if="experiences">
             <ExperienceCard v-for="experience in experiences" :key="experience.id" :experience="experience" />
           </template>
