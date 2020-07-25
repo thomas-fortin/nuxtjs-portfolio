@@ -51,7 +51,9 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc : https://github.com/nuxt-community/fontawesome-module
+    '@nuxtjs/fontawesome'
   ],
   /*
   ** Nuxt.js modules
@@ -125,6 +127,13 @@ export default {
         fr: require('./locales/fr-FR.json'),
         en: require('./locales/en-US.json')
       }
+    }
+  },
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: ['faLongArrowAltRight']
     }
   },
   /*

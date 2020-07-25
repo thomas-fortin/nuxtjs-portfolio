@@ -25,6 +25,9 @@ body {
   position: relative;
   padding: 0.5rem;
   font-weight: bold;
+  > svg {
+    @apply ml-2;
+  }
   &::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -38,7 +41,6 @@ body {
 
     @apply bg-main-gradient;
   }
-  // TODO: Add a ml-x on the icon on the link hover
   &:hover::after {
     width: 100%;
     left: 0;
