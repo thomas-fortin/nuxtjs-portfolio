@@ -35,13 +35,10 @@ body {
     position: absolute;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 50%;
+
+    @apply bg-main-gradient;
   }
-  &.hover-effect--primary::after {
-    background-color: theme('colors.primary');
-  }
-  &.hover-effect--secondary::after {
-    background-color: theme('colors.secondary');
-  }
+  // TODO: Add a ml-x on the icon on the link hover
   &:hover::after {
     width: 100%;
     left: 0;
