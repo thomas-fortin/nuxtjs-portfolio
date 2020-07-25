@@ -19,6 +19,34 @@ body {
 .bg-main-gradient {
   background: linear-gradient(128deg, theme('colors.primary') 0%, theme('colors.secondary') 100%);
 }
+.hover-effect {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+  font-weight: bold;
+  &::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 25%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 50%;
+  }
+  &.hover-effect--primary::after {
+    background-color: theme('colors.primary');
+  }
+  &.hover-effect--secondary::after {
+    background-color: theme('colors.secondary');
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
 .btn {
   transition: all 0.2s;
 
@@ -30,7 +58,7 @@ body {
     cursor: not-allowed;
   }
   &.btn-primary {
-    @apply text-white border-solid border-2 border-white;
+    @apply bg-primary text-white border-solid border-2 border-white;
     &:not([disabled]):hover {
       @apply bg-white text-primary;
     }

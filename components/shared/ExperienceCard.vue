@@ -33,9 +33,9 @@
       </div>
       <div class="text-right my-6 mr-4">
         <!-- TODO: Put the right link -->
-        <router-link :to="{name: 'experience', params: {slug: experience.slug}}" class="btn inline-block" title="En savoir plus">
+        <nuxt-link to="#" class="hover-effect hover-effect--primary inline-block" title="En savoir plus">
           En savoir plus
-        </router-link>
+        </nuxt-link>
       </div>
     </div>
   </div>
