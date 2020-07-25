@@ -1,6 +1,6 @@
 <template>
   <div class="md:w-1/2 lg:w-1/3 mb-16 px-2">
-    <div class="experience max-w-sm rounded overflow-hidden shadow-lg w-full flex flex-col">
+    <div class="experience max-w-sm rounded overflow-hidden shadow-lg w-full h-full flex flex-col">
       <div class="experience__content px-6 py-6 flex-1">
         <h4 class="text-xl mb-1 lg:mb-2">
           {{ experience.title }}

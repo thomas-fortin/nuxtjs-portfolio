@@ -1,7 +1,7 @@
 <template>
   <section id="homeExperiences" class="bg-gray-100">
     <div class="container mx-auto py-5">
-      <h3 class="text-3xl md:text-4xl lg:text-5xl font-thin mb-5 text-center">
+      <h3 class="section-title">
         {{ $t('homeExperiences.title') }}
       </h3>
       <div class="homeExperiences__content mt-8">

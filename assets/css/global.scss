@@ -19,6 +19,9 @@ body {
 .bg-main-gradient {
   background: linear-gradient(128deg, theme('colors.primary') 0%, theme('colors.secondary') 100%);
 }
+.section-title {
+  @apply text-3xl font-thin mb-5 text-center;
+}
 .hover-effect {
   text-decoration: none;
   display: inline-block;
@@ -61,5 +64,17 @@ body {
     &:not([disabled]):hover {
       @apply bg-white text-primary;
     }
+  }
+}
+
+@screen md {
+  .section-title {
+    @apply text-4xl;
+  }
+}
+
+@screen md {
+  .section-title {
+    @apply text-5xl;
   }
 }

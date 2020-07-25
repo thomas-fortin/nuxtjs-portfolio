@@ -3,5 +3,8 @@
   "jobPost": "Full-stack web developer",
   "homeExperiences": {
     "title": "My experiences"
+  },
+  "homeCallToAction": {
+    "title": "Find me"
   }
 }
