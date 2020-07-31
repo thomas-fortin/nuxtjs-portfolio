@@ -6,7 +6,7 @@
       </h3>
       <div class="homeStudies__content mt-8">
         <p class="text-center">
-        {{ $t('homeStudies.catchPhrase') }}
+          {{ $t('homeStudies.catchPhrase') }}
         </p>
         <div class="mt-16 flex flex-wrap justify-center studies">
           <!-- <template v-if="studies">

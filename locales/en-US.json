@@ -10,6 +10,7 @@
     "catchPhrase": "Here is a non-exhaustive list of my last professional experiences !"
   },
   "homeCallToAction": {
-    "title": "Find me"
+    "title": "Find me",
+    "catchPhrase": "Do you want to find me on social medias or know more about my projects ? Here are the useful links. And if you want to find the source code of this project, it's publicly available on the following Github account !"
   }
 }

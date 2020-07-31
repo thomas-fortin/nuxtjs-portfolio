@@ -6,9 +6,9 @@
       </h3>
       <div class="homeCallToAction__content mt-8">
         <p class="text-center">
-          Vous voulez me retrouver sur les réseaux sociaux ? En savoir plus sur mes projets ? Voici la liste de mes profils !
+          {{ $t('homeCallToAction.catchPhrase') }}
         </p>
-        <div class="socialNetworks flex justify-center mt-5">
+        <div class="socialNetworks flex justify-center my-5">
           <div class="socialNetworks__linkedin mx-5 text-5xl">
             <a href="https://www.linkedin.com/in/fortinthomas/" class="hover-effect-2" target="_blank" rel="nofollow">
               <fa-icon :icon="['fab', 'linkedin']" />

@@ -6,7 +6,7 @@
       </h3>
       <div class="homeExperiences__content mt-8">
         <p class="text-center">
-          Voici une liste non-exhaustive de mes dernières expériences professionnelles :
+          {{ $t('homeExperiences.catchPhrase') }}
         </p>
         <div class="mt-16 flex flex-wrap justify-center experiences">
           <template v-if="experiences">
