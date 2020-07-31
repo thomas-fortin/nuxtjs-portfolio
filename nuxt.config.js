@@ -1,4 +1,3 @@
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -133,7 +132,8 @@ export default {
     component: 'fa',
     suffix: true,
     icons: {
-      solid: ['faLongArrowAltRight']
+      solid: ['faLongArrowAltRight'],
+      brands: ['faTwitter', 'faLinkedin', 'faGithub', 'faMedium']
     }
   },
   /*

@@ -33,9 +33,9 @@
       </div>
       <div class="text-right my-6 mr-4">
         <!-- TODO: Put the right link -->
-        <nuxt-link to="#" class="hover-effect inline-block" title="En savoir plus">
+        <nuxt-link to="#" class="hover-effect-1 inline-block" title="En savoir plus">
           En savoir plus
-          <fa-icon icon="long-arrow-alt-right" />
+          <fa-icon :icon="['fas', 'long-arrow-alt-right']" />
         </nuxt-link>
       </div>
     </div>

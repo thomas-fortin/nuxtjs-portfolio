@@ -22,7 +22,7 @@ body {
 .section-title {
   @apply text-3xl font-thin mb-5 text-center;
 }
-.hover-effect {
+.hover-effect-1 {
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -47,6 +47,16 @@ body {
   &:hover::after {
     width: 100%;
     left: 0;
+  }
+}
+.hover-effect-2 {
+  > * {
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    > * {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 .btn {
