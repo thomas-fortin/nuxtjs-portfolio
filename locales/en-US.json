@@ -1,8 +1,13 @@
 {
   "home": "Home",
   "jobPost": "Full-stack web developer",
+  "homeStudies": {
+    "title": "My studies",
+    "catchPhrase": "Here is an exhaustive list of my graduate studies !"
+  },
   "homeExperiences": {
-    "title": "My experiences"
+    "title": "My experiences",
+    "catchPhrase": "Here is a non-exhaustive list of my last professional experiences !"
   },
   "homeCallToAction": {
     "title": "Find me"
