@@ -18,7 +18,7 @@ export const mutations = {
 
 export const actions = {
   async fetchExperiences({ commit }) {
-    const snapshot = await this.$fireStore.collection('experiences_fr').get();
+    const snapshot = await this.$fireStore.collection(`experiences_${this.app.i18n.locale}`).get();
 
     const allExperiences = snapshot.docChanges()
       .map(({ doc }) => ({
