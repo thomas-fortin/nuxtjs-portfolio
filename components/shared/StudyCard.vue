@@ -15,18 +15,18 @@
           v-for="skill in study.skills.slice(0, skillsNb)"
           :key="skill"
           :name="skill"
-          color="primary"
+          color="secondary"
         />
         <template v-if="study.skills.length > skillsNb">
           <Skill
             v-if="study.skills.length > skillsNb + 1"
             :name="'+ ' + (study.skills.length - skillsNb) + ' autres'"
-            color="primary"
+            color="secondary"
           />
           <Skill
             v-else
             :name="'+ ' + (study.skills.length - skillsNb) + ' autre'"
-            color="primary"
+            color="secondary"
           />
         </template>
       </div>
