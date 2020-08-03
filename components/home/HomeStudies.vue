@@ -9,9 +9,9 @@
           {{ $t('homeStudies.catchPhrase') }}
         </p>
         <div class="mt-16 flex flex-wrap justify-center studies">
-          <!-- <template v-if="studies">
+          <template v-if="studies">
             <StudyCard v-for="study in studies" :key="study.id" :study="study" />
-          </template> -->
+          </template>
         </div>
       </div>
     </div>
@@ -19,16 +19,16 @@
 </template>
 
 <script>
-// import { mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
-// export default {
-//   computed: {
-//     ...mapGetters('studies', {
-//       'studies': 'getStudies'
-//     })
-//   },
-//   created() {
-//     this.$store.dispatch('studies/fetchStudies');
-//   }
-// };
+export default {
+  computed: {
+    ...mapGetters('studies', {
+      'studies': 'getStudies'
+    })
+  },
+  created() {
+    this.$store.dispatch('studies/fetchStudies');
+  }
+};
 </script>
