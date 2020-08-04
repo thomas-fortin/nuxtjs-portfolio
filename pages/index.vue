@@ -19,6 +19,11 @@ export default {
     HomeExperiences,
     HomeStudies,
     HomeCallToAction
+  },
+  head() {
+    return {
+      title: `${this.$t('home')} | ${process.env.SITE_NAME}`
+    };
   }
 };
 </script>
