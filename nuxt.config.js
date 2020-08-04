@@ -101,6 +101,14 @@ export default {
           analytics: true
         }
       }
+    ],
+    // Doc: https://sweetalert2.github.io/
+    [
+      'vue-sweetalert2/nuxt',
+      {
+        confirmButtonColor: '#08a5e1',
+        cancelButtonColor: '#e5e5e5'
+      }
     ]
   ],
   i18n: {

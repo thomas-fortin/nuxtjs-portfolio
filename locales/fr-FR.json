@@ -12,5 +12,9 @@
   "homeCallToAction": {
     "title": "Me retrouver",
     "catchPhrase": "Vous voulez me retrouver sur les réseaux sociaux ou en savoir plus sur mes projets ? Voici tous les liens utiles. Et si vous voulez retrouver le code source de ce projet, c'est disponible en public sur le Github qui suit !"
+  },
+  "i18n": {
+    "languageSwitchedTo": "Langue changée en",
+    "languageSwitchError": "Une erreur est survenue lors du changement de langue"
   }
 }

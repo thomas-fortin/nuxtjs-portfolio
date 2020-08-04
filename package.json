@@ -29,7 +29,8 @@
     "lodash": "^4.17.19",
     "nuxt": "^2.13.0",
     "nuxt-i18n": "^6.13.1",
-    "vue-scrollto": "^2.18.1"
+    "vue-scrollto": "^2.18.1",
+    "vue-sweetalert2": "^3.0.6"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",

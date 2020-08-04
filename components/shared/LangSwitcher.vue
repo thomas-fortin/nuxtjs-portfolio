@@ -22,7 +22,34 @@ export default {
   },
   methods: {
     switchLocale(locale) {
-      this.$router.push({ path: this.switchLocalePath(locale.code) });
+      return new Promise((resolve, reject) => {
+        try {
+          this.$router.push({ path: this.switchLocalePath(locale.code) });
+          resolve();
+        } catch (e) {
+          reject(e);
+        }
+      }).then(() => {
+        this.$swal({
+          toast: true,
+          showConfirmButton: false,
+          position: 'bottom-end',
+          timerProgressBar: true,
+          title: `${this.$t('i18n.languageSwitchedTo', locale.code)} ${locale.name}`,
+          icon: 'success',
+          timer: 3000
+        });
+      }).catch(() => {
+        this.$swal({
+          toast: true,
+          showConfirmButton: false,
+          position: 'bottom-end',
+          timerProgressBar: true,
+          title: `${this.$t('i18n.languageSwitchedError', locale.code)} ${locale.name}`,
+          icon: 'error',
+          timer: 3000
+        });
+      });
     }
   }
 };

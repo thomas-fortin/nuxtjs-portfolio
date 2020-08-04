@@ -12,5 +12,9 @@
   "homeCallToAction": {
     "title": "Find me",
     "catchPhrase": "Do you want to find me on social medias or know more about my projects ? Here are the useful links. And if you want to find the source code of this project, it's publicly available on the following Github account !"
+  },
+  "i18n": {
+    "languageSwitchedTo": "Language switched to",
+    "languageSwitchError": "An error occurred while switching the language"
   }
 }
