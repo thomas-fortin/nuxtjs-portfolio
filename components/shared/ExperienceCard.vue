@@ -32,8 +32,7 @@
         </template>
       </div>
       <div class="text-right my-6 mr-4">
-        <!-- TODO: Put the right link -->
-        <nuxt-link to="#" class="hover-effect-1 inline-block" title="En savoir plus">
+        <nuxt-link :to="'/experiences/' + experience.slug" class="hover-effect-1 inline-block" title="En savoir plus">
           En savoir plus
           <fa-icon :icon="['fas', 'long-arrow-alt-right']" />
         </nuxt-link>

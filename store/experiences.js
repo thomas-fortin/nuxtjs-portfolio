@@ -1,18 +1,25 @@
 import _ from 'lodash';
 
 export const state = () => ({
-  experiences: []
+  experiences: [],
+  experience: {}
 });
 
 export const getters = {
   getExperiences(state) {
     return state.experiences;
+  },
+  getExperience(state) {
+    return state.experience;
   }
 };
 
 export const mutations = {
   SET_EXPERIENCES(state, experiences) {
     state.experiences = experiences;
+  },
+  GET_EXPERIENCE(state, experience) {
+    state.experience = experience;
   }
 };
 
@@ -33,5 +40,14 @@ export const actions = {
       }));
 
     commit('SET_EXPERIENCES', _.cloneDeep(allExperiences));
+  },
+  async getExperience({ commit }, slug) {
+    commit('GET_EXPERIENCE', {});
+    const snapshot = await this.$fireStore.collection(`experiences_${this.app.i18n.locale}`).where('slug', '==', slug).get();
+
+    const experiences = snapshot.docChanges().map(({ doc }) => doc.data());
+    const matchingExperience = experiences[0];
+
+    commit('GET_EXPERIENCE', matchingExperience);
   }
 };

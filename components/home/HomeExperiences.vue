@@ -19,13 +19,11 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
   computed: {
-    ...mapGetters('experiences', {
-      'experiences': 'getExperiences'
-    })
+    experiences() {
+      return this.$store.getters['experiences/getExperiences'];
+    }
   },
   created() {
     this.$store.dispatch('experiences/fetchExperiences');
