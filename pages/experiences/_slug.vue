@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Test!</h1>
+    <h1>{{ experience.title }}</h1>
   </div>
 </template>
 
@@ -9,11 +9,11 @@ export default {
   name: 'SingleExperience',
   computed: {
     experience() {
-      return this.$store.getters['experiences/getExperiences'];
+      return this.$store.getters['experiences/getExperience'];
     }
   },
-  created() {
-    this.$store.dispatch('experiences/getExperience', this.$route.params.slug);
+  beforeCreate() {
+    this.$store.dispatch('experiences/fetchOneExperience', this.$route.params.slug);
   }
 };
 </script>

@@ -25,7 +25,7 @@ export default {
       return this.$store.getters['experiences/getExperiences'];
     }
   },
-  created() {
+  beforeCreate() {
     this.$store.dispatch('experiences/fetchExperiences');
   }
 };

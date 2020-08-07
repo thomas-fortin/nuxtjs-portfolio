@@ -41,7 +41,7 @@ export const actions = {
 
     commit('SET_EXPERIENCES', _.cloneDeep(allExperiences));
   },
-  async getExperience({ commit }, slug) {
+  async fetchOneExperience({ commit }, slug) {
     commit('GET_EXPERIENCE', {});
     const snapshot = await this.$fireStore.collection(`experiences_${this.app.i18n.locale}`).where('slug', '==', slug).get();
 
