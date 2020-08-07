@@ -30,13 +30,13 @@ export default {
         { hid: 'og_title', property: 'og:title', content: `${this.$t('home')} | ${process.env.SITE_NAME}` },
         { hid: 'og_sitename', property: 'og:site_name', content: `${process.env.SITE_NAME}` },
         { hid: 'og_type', property: 'og:type', content: `website` },
-        { hid: 'og_url', property: 'og:url', content: `https://www.thomasfortin.fr` },
-        { hid: 'og_image', property: 'og:image', content: `https://www.thomasfortin.fr${ogImage}` },
-        { hid: 'og_image_url', property: 'og:image:url', content: `https://www.thomasfortin.fr${ogImage}` },
+        { hid: 'og_url', property: 'og:url', content: `https${process.env.BASE_URL}` },
+        { hid: 'og_image', property: 'og:image', content: `${process.env.BASE_URL}${ogImage}` },
+        { hid: 'og_image_url', property: 'og:image:url', content: `${process.env.BASE_URL}${ogImage}` },
         { hid: 'twitter_title', name: 'twitter:title', content: `${this.$t('home')} | ${process.env.SITE_NAME}` },
         { hid: 'twitter_description', name: 'twitter:description', content: `${this.$t('description')}` },
         { hid: 'twitter_creatorid', name: 'twitter:creator:id', content: `tfortin_pro` },
-        { hid: 'twitter_url', name: 'twitter:url', content: `https://www.thomasfortin.fr` },
+        { hid: 'twitter_url', name: 'twitter:url', content: `${process.env.BASE_URL}` },
         { hid: 'twitter_card', name: 'twitter:card', content: `summary_large_image` }
       ]
     };
