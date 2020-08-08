@@ -141,7 +141,8 @@ export default {
     component: 'fa',
     suffix: true,
     icons: {
-      solid: ['faLongArrowAltRight'],
+      solid: ['faLongArrowAltRight', 'faMapMarkerAlt', 'faTag'],
+      regular: ['faBuilding', 'faCalendarAlt', 'faAddressCard'],
       brands: ['faTwitter', 'faLinkedin', 'faGithub', 'faMedium']
     }
   },
