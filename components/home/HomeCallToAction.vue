@@ -15,9 +15,9 @@
                 <fa-icon :icon="['fab', 'linkedin']" />
               </a>
             </div>
-            <div class="socialNetworks__twitter mx-5 text-5xl">
-              <a href="https://twitter.com/tfortin_pro" class="hover-effect-2" target="_blank" rel="nofollow">
-                <fa-icon :icon="['fab', 'twitter']" />
+            <div class="socialNetworks__medium mx-5 text-5xl">
+              <a href="https://medium.com/@thomas.fortin.pro" class="hover-effect-2" target="_blank" rel="nofollow">
+                <fa-icon :icon="['fab', 'medium']" />
               </a>
             </div>
             <div class="socialNetworks__github mx-5 text-5xl">
@@ -25,9 +25,9 @@
                 <fa-icon :icon="['fab', 'github']" />
               </a>
             </div>
-            <div class="socialNetworks__medium mx-5 text-5xl">
-              <a href="https://medium.com/@thomas.fortin.pro" class="hover-effect-2" target="_blank" rel="nofollow">
-                <fa-icon :icon="['fab', 'medium']" />
+            <div class="socialNetworks__twitter mx-5 text-5xl">
+              <a href="https://twitter.com/tfortin_pro" class="hover-effect-2" target="_blank" rel="nofollow">
+                <fa-icon :icon="['fab', 'twitter']" />
               </a>
             </div>
           </div>
