@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="homeCallToAction__illustration md:w-1/2">
-          <img src="~/assets/img/network.svg" alt="" class="floating-effect w-100">
+          <img src="~/assets/img/illustrations/network.svg" alt="" class="floating-effect w-100">
         </div>
       </div>
     </div>
