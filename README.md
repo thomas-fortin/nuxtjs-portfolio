@@ -6,6 +6,7 @@ This repository contains my website done with the framework NuxtJs. This is also
 
 ## Features
 
+* Tailwind
 * Firebase
 * i18n
 * SEO
