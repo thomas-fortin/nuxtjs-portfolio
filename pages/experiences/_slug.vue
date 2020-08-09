@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="experiencesTop" class="bg-main-gradient h-screen relative overflow-hidden text-center text-white">
-      <div class="container mx-auto h-full flex flex-col justify-center">
+      <div class="container h-full flex flex-col justify-center">
         <div class="homeTop__content-titles">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-thin">
             Mon expérience de {{ experience.title }}
@@ -13,31 +13,31 @@
       </div>
       <BottomSingleWaveSvg :color="bgColor" />
     </section>
-    <section id="experiencesPresentation" class="experiencesPresentation">
-      <div class="container mx-auto py-5 bg-gray-100">
-        <div class="experiencesPresentation__infos md:w-1/2 mx-auto flex flex-wrap">
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['far', 'building']" />
+    <section id="experiencesPresentation" class="experiencesPresentation bg-gray-100">
+      <div class="container py-5">
+        <div class="experiencesPresentation__infos md:w-1/2 mx-3 md:mx-auto flex flex-wrap justify-center py-5 bg-white border shadow-lg rounded-lg">
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['far', 'building']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">{{ experience.company }}</span>
           </div>
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['fas', 'map-marker-alt']" />
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['fas', 'map-marker-alt']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">{{ experience.place }}</span>
           </div>
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['fas', 'tag']" />
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['fas', 'tag']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">{{ experience.title }}</span>
           </div>
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['far', 'address-card']" />
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['far', 'address-card']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">{{ experience.type }}</span>
           </div>
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['far', 'calendar-alt']" />
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['far', 'calendar-alt']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">Début : {{ experience.start }}</span>
           </div>
-          <div class="w-1/2 my-2">
-            <fa-icon :icon="['far', 'calendar-alt']" />
+          <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
+            <fa-icon :icon="['far', 'calendar-alt']" class="experiencesPresentation__infos-icon" />
             <span class="ml-2">Fin : {{ experience.end }}</span>
           </div>
         </div>
@@ -74,3 +74,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.experiencesPresentation__infos {
+  > div {
+    height: 50px;
+    .experiencesPresentation__infos-icon {
+      width: 25px;
+    }
+  }
+}
+</style>
