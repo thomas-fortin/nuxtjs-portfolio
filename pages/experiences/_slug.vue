@@ -43,7 +43,13 @@
         </div>
         <div class="font-black italic">
           <span class="block">TODO: All experience infos here...</span>
-          <span class="block">TODO: Add missions and make a loop on it...</span>
+          <span class="block">TODO: Add missions and make a loop on it:</span>
+          <span
+            v-for="mission in experience.missions"
+            :key="mission.id"
+          >
+            {{ mission.title }}
+          </span>
         </div>
       </div>
     </section>

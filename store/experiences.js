@@ -29,7 +29,8 @@ export const actions = {
 
     const allExperiences = snapshot.docChanges()
       .map(({ doc }) => ({
-        id: doc.id,
+        uid: doc.id,
+        id: doc.data().id,
         title: doc.data().title,
         company: doc.data().company,
         place: doc.data().place,
@@ -50,7 +51,8 @@ export const actions = {
 
     const experiences = snapshot.docChanges()
       .map(({ doc }) => ({
-        id: doc.id,
+        uid: doc.id,
+        id: doc.data().id,
         title: doc.data().title,
         company: doc.data().company,
         place: doc.data().place,
@@ -61,6 +63,15 @@ export const actions = {
         end: new Date(doc.data().end.seconds * 1000).toLocaleDateString(currentLocale.iso, dateOptions)
       }));
     const matchingExperience = experiences[0];
+
+    const snapshot2 = await this.$fireStore.collection(`missions_${currentLocale.code}`).where('experienceId', '==', matchingExperience.id).get();
+    const matchingExperienceMissions = snapshot2.docChanges().map(({ doc }) => ({
+      uid: doc.id,
+      id: doc.data().id,
+      title: doc.data().title
+    }));
+
+    matchingExperience.missions = matchingExperienceMissions;
 
     commit('GET_EXPERIENCE', matchingExperience);
   }
