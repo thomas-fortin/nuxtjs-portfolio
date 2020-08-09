@@ -1,6 +1,6 @@
 <template>
   <section id="homeCallToAction" class="bg-main-gradient relative overflow-hidden text-center text-white">
-    <div class="container mx-auto py-5">
+    <div class="container py-5">
       <h3 class="section-title">
         {{ $t('homeCallToAction.title') }}
       </h3>

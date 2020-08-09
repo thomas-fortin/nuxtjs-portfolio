@@ -1,6 +1,6 @@
 <template>
   <section id="homeStudies" class="bg-gray-100">
-    <div class="container mx-auto py-5">
+    <div class="container py-5">
       <h3 class="section-title">
         {{ $t('homeStudies.title') }}
       </h3>

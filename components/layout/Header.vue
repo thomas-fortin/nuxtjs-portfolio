@@ -1,6 +1,6 @@
 <template>
   <header class="absolute w-full z-20" role="banner">
-    <div class="container mx-auto flex justify-between py-3">
+    <div class="container flex justify-between py-3">
       <nuxt-link :to="localePath('index')">
         <span class="text-white text-2xl">Thomas Fortin</span>
       </nuxt-link>

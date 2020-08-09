@@ -14,6 +14,9 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, 'Roboto', 'Ubuntu', 'Cantarell', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
 }
+.container > div {
+  @apply mx-2;
+}
 
 /* ----- [Keyframes] ----- */
 .floating-effect {
@@ -82,7 +85,7 @@ body {
   }
 }
 
-@screen md {
+@screen sm {
   .section-title {
     @apply text-4xl;
   }
@@ -91,5 +94,11 @@ body {
 @screen md {
   .section-title {
     @apply text-5xl;
+  }
+  .container {
+    @apply mx-auto;
+    > div {
+      @apply mx-0;
+    }
   }
 }
