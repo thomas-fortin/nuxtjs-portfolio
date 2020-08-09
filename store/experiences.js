@@ -68,7 +68,8 @@ export const actions = {
     const matchingExperienceMissions = snapshot2.docChanges().map(({ doc }) => ({
       uid: doc.id,
       id: doc.data().id,
-      title: doc.data().title
+      title: doc.data().title,
+      description: doc.data().description
     }));
 
     matchingExperience.missions = matchingExperienceMissions;

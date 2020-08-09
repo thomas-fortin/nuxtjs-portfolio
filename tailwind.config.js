@@ -39,6 +39,9 @@ module.exports = {
       grayish: colors.gray[700]
     },
     extend: {
+      height: {
+        'half-screen': '50vh'
+      },
       spacing: {
         '2px': '2px'
       },
