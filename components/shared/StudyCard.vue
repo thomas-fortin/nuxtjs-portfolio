@@ -1,6 +1,6 @@
 <template>
   <div class="md:w-1/2 lg:w-1/3 mb-16 px-2">
-    <div class="bg-main-gradient max-w-sm rounded overflow-hidden shadow-lg w-full h-full p-2px">
+    <div class="bg-main-gradient max-w-sm rounded overflow-hidden shadow-xl w-full h-full p-2px">
       <div class="study bg-white rounded overflow-hidden w-full h-full flex flex-col">
         <div class="study__content px-6 py-6 flex-1">
           <h4 class="text-xl mb-1 lg:mb-2">
