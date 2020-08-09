@@ -1,20 +1,11 @@
-# nuxtjs-portfolio
+# NuxtJS Portfolio
 
-## Build Setup
+_This project is still in progress._
 
-```bash
-# install dependencies
-$ npm install
+This repository contains my website done with the framework NuxtJs. This is also a pretext to test some packages and new technologies.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Features
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+* Firebase
+* i18n
+* SEO
