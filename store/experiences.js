@@ -36,7 +36,7 @@ export const actions = {
         place: doc.data().place,
         type: doc.data().type,
         shortDesc: doc.data().shortDesc,
-        skills: doc.data().skills,
+        skills: _.shuffle(doc.data().skills),
         slug: doc.data().slug
       }));
 
@@ -69,7 +69,8 @@ export const actions = {
       uid: doc.id,
       id: doc.data().id,
       title: doc.data().title,
-      description: doc.data().description
+      description: doc.data().description,
+      skills: _.shuffle(doc.data().skills)
     }));
 
     matchingExperience.missions = matchingExperienceMissions;
