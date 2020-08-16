@@ -119,8 +119,8 @@ export default {
           json: {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            'name': `${this.$t('home.title')} | ${process.env.SITE_NAME}`,
-            'description': `${this.$t('home.description')}`,
+            'name': `${this.experience.title} | ${process.env.SITE_NAME}`,
+            'description': `${this.experience.shortDesc}`,
             'publisher': {
               '@type': 'Person',
               'name': 'Thomas Fortin',
