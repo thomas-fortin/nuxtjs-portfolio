@@ -1,6 +1,8 @@
 {
   "jobPost": "Full-stack web developer",
   "myExperienceOf": "My experience of",
+  "start": "Start:",
+  "end": "End:",
   "home": {
     "title": "Home",
     "description": "My online portfolio (Thomas Fortin), in order to present my training, my experiences and my projects. This site also serves as a \"lab\" for me to experiment with new things."

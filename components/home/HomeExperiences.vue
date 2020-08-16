@@ -10,7 +10,7 @@
         </p>
         <div class="mt-16 flex flex-wrap justify-center experiences">
           <template v-if="experiences">
-            <ExperienceCard v-for="experience in experiences" :key="experience.id" :experience="experience" />
+            <ExperienceCard v-for="experience in experiences.slice(0, 3)" :key="experience.id" :experience="experience" />
           </template>
         </div>
       </div>

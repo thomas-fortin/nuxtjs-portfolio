@@ -4,7 +4,7 @@
       <div class="container h-full flex flex-col justify-center">
         <div class="homeTop__content-titles">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-thin">
-            Mon expérience de {{ experience.title }}
+            {{ $t('myExperienceOf') }} {{ experience.title }}
           </h1>
           <h2 class="text-2xl md:text-3xl lg:text-4xl font-thin">
             chez {{ experience.company }} — {{ experience.place }}
@@ -35,11 +35,11 @@
             </div>
             <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
               <fa-icon :icon="['far', 'calendar-alt']" class="experiencesPresentation__infos-icon" />
-              <span class="ml-2">Début : {{ experience.start }}</span>
+              <span class="ml-2">{{ $t('start') }} {{ experience.start }}</span>
             </div>
             <div class="w-full md:w-1/3 my-2 flex items-center mx-1 px-4 md:px-0">
               <fa-icon :icon="['far', 'calendar-alt']" class="experiencesPresentation__infos-icon" />
-              <span class="ml-2">Fin : {{ experience.end }}</span>
+              <span class="ml-2">{{ $t('end') }} {{ experience.end }}</span>
             </div>
           </div>
           <div class="experiencesPresentation__missions mt-8">
@@ -54,6 +54,14 @@
               <p>
                 {{ mission.description }}
               </p>
+              <div class="experiencesPresentation__missions-skills py-4">
+                <Skill
+                  v-for="skill in mission.skills"
+                  :key="skill"
+                  :name="skill"
+                  color="primary"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -64,13 +72,15 @@
 
 <script>
 import BottomSingleWaveSvg from '@/components/shared/BottomSingleWaveSvg';
+import Skill from '@/components/shared/Skill';
 import { theme } from '@/tailwind.config';
 import ogImage from '@/assets/img/photo_profil.jpg';
 
 export default {
   name: 'SingleExperience',
   components: {
-    BottomSingleWaveSvg
+    BottomSingleWaveSvg,
+    Skill
   },
   data() {
     return {
